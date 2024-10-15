@@ -28,15 +28,15 @@ $  pip install yq
 $ ./generate-fstab.sh
 
 ## Variables used in the script
-YAML_FILE: YAML File with entries of different fs, refer sample-fstab.yml 
-OFILE: Output fstab file
+- YAML_FILE: YAML File with entries of different fs, refer sample-fstab.yml 
+- OFILE: Output fstab file
 
 ## Sample run  with sample-fstab.yml
 $ ./generate-fstab.sh
-creating fstab file in current directory
-Adding entry to fstab: "/dev/sda1: /boot xfs defaults 0 2"
-Adding entry to fstab: "/dev/sda2: / ext4 defaults 0 1"
-Adding entry to fstab: "/dev/sdb1: /var/lib/postgresql ext4 defaults,createopts="-m 10" 0 2"
-Adding entry to fstab: "192.168.4.5:/var/nfs/home /home nfs noexec,nosuid 0 2"
-$ 
+ creating fstab file in current directory
+ Adding entry to fstab: "/dev/sda1: /boot xfs defaults 0 2"
+ Adding entry to fstab: "/dev/sda2: / ext4 defaults 0 1"
+ Adding entry to fstab: "/dev/sdb1: /var/lib/postgresql ext4 defaults,createopts="-m 10" 0 2"
+ Adding entry to fstab: "192.168.4.5:/var/nfs/home /home nfs noexec,nosuid 0 2"
+ $ 
 

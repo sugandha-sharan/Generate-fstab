@@ -1,0 +1,5 @@
+
+/dev/sda1  /boot xfs defaults 0 2
+/dev/sda2  / ext4 defaults 0 1
+/dev/sdb1  /var/lib/postgresql ext4 defaults,createopts="-m 10" 0 2
+192.168.4.5:/var/nfs/home  /home nfs noexec,nosuid 0 2
